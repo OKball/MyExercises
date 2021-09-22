@@ -1,0 +1,108 @@
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+.cube{
+    -webkit-transform-style: preserve-3d;
+    -webkit-animation: spin 10s infinite linear;
+    position: relative;
+    width: 202px;
+    height: 202px;
+    top: 50%;
+    left: 50%;
+    margin-left: -50px;
+    margin-top: -50px;
+    background-color:rgba(83, 37, 37, 0);
+}
+
+#cubeTop{
+    -webkit-animation: clr 3s infinite;
+    -webkit-transform: rotateX(90deg); 
+    margin-top: -100px;
+    width: 200px;
+    height: 200px;
+    line-height: 100px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+    display: block;
+    position: absolute;
+    border: 1px solid black;
+}
+#cubeBottom{
+    -webkit-animation: clr 3s infinite;
+    -webkit-transform: rotateY(90deg); 
+    margin-left: 100px;
+    width: 200px;
+    height: 200px;
+    line-height: 100px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+    display: block;
+    position: absolute;
+    border: 1px solid black;
+}
+#cubeLeft{
+    -webkit-animation: clr 3s infinite linear;
+    -webkit-transform: rotateX(-90deg); 
+    margin-top: 100px;
+    width: 200px;
+    height: 200px;
+    line-height: 100px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+    display: block;
+    position: absolute;
+    border: 1px solid black;
+}
+#cubeRight{
+    -webkit-animation: clr 3s infinite;
+    -webkit-transform: rotateY(-90deg); 
+    margin-left: -100px;
+    width: 200px;
+    height: 200px;
+    line-height: 100px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+    display: block;
+    position: absolute;
+    border: 1px solid black;
+}
+#cubeFront{
+    -webkit-animation: clr 3s infinite;
+    -webkit-transform: translateZ(100px);
+    width: 200px;
+    height: 200px;
+    line-height: 100px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+    display: block;
+    position: absolute;
+    border: 1px solid black;
+}
+#cubeBack{
+    -webkit-animation: clr 3s infinite;
+    -webkit-transform: translateZ(-100px) rotateX(180deg);
+    width: 200px;
+    height: 200px;
+    line-height: 100px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+    display: block;
+    position: absolute;
+    border: 1px solid black;
+
+}
+
+@-webkit-keyframes spin {
+    0% {-webkit-transform: rotateX(-20deg) rotateY(20deg);}
+    100% {-webkit-transform: rotateX(-20deg) rotateY(740deg);}
+}
+@-webkit-keyframes clr {
+    0%   {background: rgba(255, 255, 255, 0.5);}
+    25%  {background: rgba(255, 0, 0, 0.5);}
+    50%  {background: rgba(0, 0, 0, 0.6);}
+    75%  {background: rgba(0, 255, 255, 0.5);}
+    100%  {background: rgba(255, 255, 255, 0.5);}
+  
+}
