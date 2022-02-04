@@ -58,6 +58,11 @@ def winningCondition():
 
 
 Turn = 'X'
+print("Choose positiom by typing appropriately:")
+print("tl for top left")
+print("mm for middle middle")
+print("lr for low right and etc..")
+print("all posibilities are: tl, tm, tr, ml, mm, mr, ll, lm, lr")
 for i in range(9):
     if Turn == 'X':
         overlapVerification("X")
